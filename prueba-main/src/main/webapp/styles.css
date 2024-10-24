@@ -1,0 +1,176 @@
+/* Global Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfd; /* Fondo blanco elegante */
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #e9a6a6; /* Rosa suave */
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif; /* Tipografía elegante */
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #e78c8c; /* Color rosa sutil */
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #d15959; /* Color más oscuro al hacer hover */
+}
+
+.login-btn {
+    background-color: #d15959;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #ffb6b6;
+    color: #333;
+}
+
+/* Estilos principales */
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #e78c8c;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e78c8c;
+    padding-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Biografía de la maquillista */
+.biografia {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.bio-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.frase-text {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: #666;
+    text-align: center;
+}
+
+/* Agenda tu cita */
+#agenda-cita {
+    text-align: center;
+}
+
+.agenda-btn {
+    background-color: #d15959;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.agenda-btn:hover {
+    background-color: #e78c8c;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .biografia {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    nav a {
+        margin: 0 10px;
+        font-size: 1rem;
+    }
+
+    .login-btn {
+        padding: 8px 15px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
