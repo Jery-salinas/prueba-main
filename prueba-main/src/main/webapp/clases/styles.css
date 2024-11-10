@@ -1,0 +1,106 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #e9a6a6;
+    color: #fff;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+    margin-top: 5px;
+    font-size: 1rem;
+}
+
+main {
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    overflow-y: auto;
+}
+
+/* Estilos de la lista de eventos */
+.event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.event {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.event h2 {
+    color: #d15959;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.event p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.contact-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #25D366;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #128C7E;
+}
+
+/* Botón fijo de contacto en el pie de página */
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    background-color: #25D366;
+    text-align: center;
+}
+
+.whatsapp-btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    background-color: #25D366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E;
+}

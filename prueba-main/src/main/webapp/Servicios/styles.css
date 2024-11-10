@@ -1,0 +1,101 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #e9a6a6;
+    color: #fff;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+    margin-top: 5px;
+    font-size: 1.2rem;
+}
+
+main {
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    overflow-y: auto;
+}
+
+/* Lista de servicios */
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Tarjetas de servicios */
+.service-card {
+    background-color: #fff;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.service-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.service-info h2 {
+    color: #d15959;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-info p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.service-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #25D366;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.service-btn:hover {
+    background-color: #128C7E;
+}

@@ -17,8 +17,9 @@
 <!-- Navegación con las opciones de Productos, Galería, Clases, Contacto e Iniciar sesión -->
 <nav>
     <a href="productos/productos.jsp">Productos</a>
+    <a href="Servicios/jsp_servicios.jsp">Servicios</a>
     <a href="galeria/galeria.jsp">Galería</a>
-    <a href="#clases">Clases</a>
+    <a href="clases/jsp_clases.jsp">Clases</a>
     <a href="#contacto">Contacto</a>
     <button class="login-btn" onclick="location.href='login.jsp';">Iniciar Sesión</button>
 </nav>
