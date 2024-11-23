@@ -12,14 +12,17 @@
     <h1>Nuestros Servicios</h1>
     <p>Descubre nuestra variedad de servicios de belleza y cuidado personal.</p>
 </header>
-<!-- Navegación con las opciones de Productos, Galería, Clases, Contacto e Iniciar sesión -->
+
+<!-- Barra de Navegación -->
 <nav>
-    <a href="productos/productos.jsp">Productos</a>
-    <a href="Servicios/jsp_servicios.jsp">Servicios</a>
-    <a href="galeria/galeria.jsp">Galería</a>
-    <a href="clases/jsp_clases.jsp">Clases</a>
-    <a href="#contacto">Contacto</a>
-    <button class="login-btn" onclick="location.href='login.jsp';">Iniciar Sesión</button>
+    <ul class="navbar">
+        <li><a href="productos/productos.jsp">Productos</a></li>
+        <li><a href="Servicios/jsp_servicios.jsp">Servicios</a></li>
+        <li><a href="galeria/galeria.jsp">Galería</a></li>
+        <li><a href="clases/jsp_clases.jsp">Clases</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><button class="login-btn" onclick="location.href='login.jsp';">Iniciar Sesión</button></li>
+    </ul>
 </nav>
 
 <main>

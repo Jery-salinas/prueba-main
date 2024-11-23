@@ -1,34 +1,46 @@
-/* Global Styles */
+/* ---------- ESTILOS GLOBALES ---------- */
 body {
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fdfdfd; /* Fondo blanco elegante */
+    background: linear-gradient(to bottom, #fff0f5, #ffe6e6);
     color: #333;
     line-height: 1.6;
     scroll-behavior: smooth;
 }
 
+/* ---------- ENCABEZADO ---------- */
 header {
-    background-color: #e9a6a6; /* Rosa suave */
+    background-color: #e9a6a6;
     color: #fff;
-    padding: 60px 20px;
+    padding: 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-header h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    font-family: 'Playfair Display', serif; /* Tipografía elegante */
-    letter-spacing: 2px;
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.logo {
+    width: 80px;
+    margin-right: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+}
+
+/* ---------- NAVEGACIÓN ---------- */
 nav {
     display: flex;
     justify-content: center;
     background-color: #fff;
-    padding: 20px 0;
+    padding: 15px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     position: sticky;
     top: 0;
@@ -36,16 +48,15 @@ nav {
 }
 
 nav a {
-    color: #e78c8c; /* Color rosa sutil */
+    color: #e78c8c;
     text-decoration: none;
-    margin: 0 20px;
+    margin: 0 15px;
     font-size: 1.1rem;
-    font-weight: 600;
     transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #d15959; /* Color más oscuro al hacer hover */
+    color: #d15959;
 }
 
 .login-btn {
@@ -55,45 +66,35 @@ nav a:hover {
     padding: 10px 20px;
     border-radius: 25px;
     cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
+    transition: 0.3s;
 }
 
 .login-btn:hover {
     background-color: #ffb6b6;
-    color: #333;
 }
 
-/* Estilos principales */
+/* ---------- SECCIONES PRINCIPALES ---------- */
 main {
     padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-section {
-    margin-bottom: 60px;
-}
-
 .section-title {
     font-size: 2.5rem;
     color: #e78c8c;
     margin-bottom: 20px;
-    border-bottom: 2px solid #e78c8c;
-    padding-bottom: 10px;
     font-family: 'Playfair Display', serif;
+    text-align: center;
 }
 
-p {
-    font-size: 1.2rem;
-    color: #555;
-}
-
-/* Biografía de la maquillista */
+/* ---------- BIOGRAFÍA ---------- */
 .biografia {
     display: flex;
     align-items: center;
     gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .bio-img {
@@ -101,76 +102,65 @@ p {
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.frase-text {
-    font-size: 1.4rem;
-    font-style: italic;
-    color: #666;
-    text-align: center;
-}
-
-/* Agenda tu cita */
-#agenda-cita {
-    text-align: center;
-}
-
+/* ---------- BOTÓN AGENDA ---------- */
 .agenda-btn {
     background-color: #d15959;
     color: #fff;
-    border: none;
     padding: 15px 30px;
-    font-size: 1.2rem;
     border-radius: 25px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: 0.3s;
 }
 
 .agenda-btn:hover {
     background-color: #e78c8c;
-    transform: scale(1.05);
 }
 
-/* Footer */
+/* ---------- PIE DE PÁGINA ---------- */
 footer {
     background-color: #333;
     color: #fff;
-    text-align: center;
     padding: 20px;
+    text-align: center;
     position: relative;
 }
 
 footer p {
-    margin: 0;
     font-size: 1rem;
 }
 
-/* Media Queries */
+/* ---------- ANIMACIONES Y EFECTOS ---------- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header, main, footer {
+    animation: fadeIn 1.5s ease;
+}
+
+/* ---------- MEDIA QUERIES ---------- */
 @media (max-width: 768px) {
-    .biografia {
+    .header-content {
         flex-direction: column;
-        text-align: center;
     }
 
     header h1 {
-        font-size: 2.5rem;
-    }
-
-    nav a {
-        margin: 0 10px;
-        font-size: 1rem;
-    }
-
-    .login-btn {
-        padding: 8px 15px;
-    }
-
-    .section-title {
         font-size: 2rem;
     }
 
-    p {
-        font-size: 1rem;
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
     }
 }

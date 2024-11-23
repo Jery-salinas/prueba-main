@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SALON MUSA</title>
-    <!-- Enlace al archivo CSS externo -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="imagenes/icono_musa.ico" />
 </head>
 <body>
-<!-- Header con el título -->
+<!-- Encabezado con el título y logo -->
 <header>
-    <h1>SALON MUSA</h1>
+    <div class="header-content">
+        <img src="imagenes/icono_musa.ico" alt="Logo SALON MUSA" class="logo">
+        <h1>SALON MUSA</h1>
+    </div>
 </header>
 
 <!-- Navegación con las opciones de Productos, Galería, Clases, Contacto e Iniciar sesión -->
@@ -21,27 +24,24 @@
     <a href="galeria/galeria.jsp">Galería</a>
     <a href="clases/jsp_clases.jsp">Clases</a>
     <a href="#contacto">Contacto</a>
-    <button class="login-btn" onclick="location.href='login.jsp';">Iniciar Sesión</button>
+    <button class="login-btn" onclick="location.href='login/login.jsp';">Iniciar Sesión</button>
 </nav>
 
-<!-- Contenido principal con scroll -->
+<!-- Contenido principal -->
 <main>
-    <!-- Biografía de Ángeles Abigail -->
     <section id="maquillista">
         <h2 class="section-title">Ángeles Abigail</h2>
         <div class="biografia">
             <img src="imagenes/angeles-abigail.jpg" alt="Ángeles Abigail" class="bio-img">
-            <p>Ángeles Abigail es una maquillista profesional con más de 10 años de experiencia en el mundo de la belleza. Su dedicación y pasión por el arte del maquillaje la han llevado a convertirse en una de las referentes en su campo, inspirando a miles de mujeres a sentirse seguras y radiantes. Su trabajo se caracteriza por su creatividad y atención al detalle, logrando resultados que realzan la belleza natural de cada cliente.</p>
+            <p>Ángeles Abigail es una maquillista profesional con más de 10 años de experiencia en el mundo de la belleza...</p>
         </div>
     </section>
 
-    <!-- Frase inspiradora de la empresa -->
     <section id="frase-empresa">
         <h2 class="section-title">"Belleza que inspira"</h2>
-        <p class="frase-text">Nuestra misión es resaltar la belleza única de cada mujer, brindando confianza y estilo.</p>
+        <p class="frase-text">Nuestra misión es resaltar la belleza única de cada mujer...</p>
     </section>
 
-    <!-- Opción de agendar cita -->
     <section id="agenda-cita">
         <h2 class="section-title">Agenda tu Cita</h2>
         <p>Reserva tu cita con Ángeles Abigail y descubre una experiencia de belleza inigualable.</p>
