@@ -24,8 +24,7 @@
     <a href="http://localhost:8081/prueba_war/galeria/galeria.jsp" onclick="return preventReload(this);">Galería</a>
     <a href="http://localhost:8081/prueba_war/clases/jsp_clases.jsp" onclick="return preventReload(this);">Clases</a>
     <a href="http://localhost:8081/prueba_war/jsp_contato/contacto.jsp" onclick="return preventReload(this);">Contacto</a>
-    <a href="http://localhost:8081/prueba_war/" onclick="return preventReload(this);">volver al inicio</a>
-    <button class="login-btn" onclick="location.href='login/login.jsp';">Iniciar Sesión</button>
+    <button class="login-btn" data-target="http://localhost:8081/prueba_war/login/login.jsp" onclick="preventReloadFromButton(this)">Iniciar Sesión</button>
 </nav>
 
 <script>
