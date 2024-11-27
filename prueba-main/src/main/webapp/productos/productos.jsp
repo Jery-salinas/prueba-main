@@ -15,7 +15,7 @@
         <input type="text" placeholder="Buscar productos..." />
         <button class="search-btn">Buscar</button>
     </div>
-    <button class="back-btn" data-target="http://localhost:8081/prueba_war/" onclick="preventReloadFromButton(this);">Volver al inicio</button>
+    <button class="back-btn" onclick="location.href='webapp/index.jsp';">Volver al inicio</button>
 </header>
 <!-- Navegación con las opciones de Productos, Galería, Clases, Contacto e Iniciar sesión -->
 <nav>
@@ -24,6 +24,7 @@
     <a href="http://localhost:8081/prueba_war/galeria/galeria.jsp" onclick="return preventReload(this);">Galería</a>
     <a href="http://localhost:8081/prueba_war/clases/jsp_clases.jsp" onclick="return preventReload(this);">Clases</a>
     <a href="http://localhost:8081/prueba_war/jsp_contato/contacto.jsp" onclick="return preventReload(this);">Contacto</a>
+    <a href="http://localhost:8081/prueba_war/" onclick="return preventReload(this);">volver al inicio</a>
     <button class="login-btn" onclick="location.href='login/login.jsp';">Iniciar Sesión</button>
 </nav>
 
@@ -41,22 +42,7 @@
         return true; // Permite la navegación
     }
 </script>
-<script>
-    function preventReloadFromButton(button) {
-        // Obtén el pathname del destino del botón
-        const targetPath = new URL(button.getAttribute('data-target')).pathname;
-        const currentPath = window.location.pathname;
 
-        // Verifica si el destino es la página actual
-        if (targetPath === currentPath) {
-            console.log("Ya estás en esta página.");
-            return false; // Evita la acción
-        }
-        // Redirige a la URL del botón
-        window.location.href = button.getAttribute('data-target');
-        return true;
-    }
-</script>
 
 
 <div class="container">
