@@ -15,13 +15,29 @@
 
 <!-- Navegación con las opciones de Productos, Galería, Clases, Contacto e Iniciar sesión -->
 <nav>
-    <a href="productos/productos.jsp">Productos</a>
-    <a href="Servicios/jsp_servicios.jsp">Servicios</a>
-    <a href="galeria/galeria.jsp">Galería</a>
-    <a href="clases/jsp_clases.jsp">Clases</a>
-    <a href="#contacto">Contacto</a>
-    <button class="login-btn" onclick="location.href='login.jsp';">Iniciar Sesión</button>
+    <a href="http://localhost:8081/prueba_war/productos/productos.jsp" onclick="return preventReload(this);">Productos</a>
+    <a href="http://localhost:8081/prueba_war/Servicios/jsp_servicios.jsp" onclick="return preventReload(this);">Servicios</a>
+    <a href="http://localhost:8081/prueba_war/galeria/galeria.jsp" onclick="return preventReload(this);">Galería</a>
+    <a href="http://localhost:8081/prueba_war/clases/jsp_clases.jsp" onclick="return preventReload(this);">Clases</a>
+    <a href="http://localhost:8081/prueba_war/jsp_contato/contacto.jsp" onclick="return preventReload(this);">Contacto</a>
+    <a href="http://localhost:8081/prueba_war/" onclick="return preventReload(this);">volver al inicio</a>
+    <button class="login-btn" onclick="location.href='login/login.jsp';">Iniciar Sesión</button>
 </nav>
+
+<script>
+    function preventReload(link) {
+        // Obtén el pathname de la URL actual y del enlace
+        const currentPath = window.location.pathname;
+        const linkPath = new URL(link.href).pathname;
+
+        // Verifica si el pathname es el mismo
+        if (linkPath === currentPath) {
+            console.log("Ya estás en esta página.");
+            return false; // Evita la navegación
+        }
+        return true; // Permite la navegación
+    }
+</script>
 
 <main>
     <!-- Sección de Cortes de Cabello -->

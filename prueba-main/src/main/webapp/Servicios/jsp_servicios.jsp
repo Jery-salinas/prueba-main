@@ -16,12 +16,13 @@
 <!-- Barra de Navegación -->
 <nav>
     <ul class="navbar">
-        <li><a href="productos/productos.jsp">Productos</a></li>
-        <li><a href="Servicios/jsp_servicios.jsp">Servicios</a></li>
-        <li><a href="galeria/galeria.jsp">Galería</a></li>
-        <li><a href="clases/jsp_clases.jsp">Clases</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li><button class="login-btn" onclick="location.href='login.jsp';">Iniciar Sesión</button></li>
+        <li><a href="http://localhost:8081/prueba_war/productos/productos.jsp" onclick="return preventReload(this);">Productos</a></li>
+        <li><a href="http://localhost:8081/prueba_war/Servicios/jsp_servicios.jsp" onclick="return preventReload(this);">Servicios</a></li>
+        <li><a href="http://localhost:8081/prueba_war/galeria/galeria.jsp" onclick="return preventReload(this);">Galería</a></li>
+        <li><a href="http://localhost:8081/prueba_war/clases/jsp_clases.jsp" onclick="return preventReload(this);">Clases</a></li>
+        <li><a href="http://localhost:8081/prueba_war/jsp_contato/contacto.jsp" onclick="return preventReload(this);">Contacto</a></li>
+        <li><a href="http://localhost:8081/prueba_war/" onclick="return preventReload(this);">volver al inicio</a></li>
+        <li><button class="login-btn" onclick="location.href='login/login.jsp';">Iniciar Sesión</button></li>
     </ul>
 </nav>
 
