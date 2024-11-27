@@ -19,7 +19,7 @@
     <a href="http://localhost:8081/prueba_war/clases/jsp_clases.jsp" onclick="return preventReload(this);">Clases</a>
     <a href="http://localhost:8081/prueba_war/jsp_contato/contacto.jsp" onclick="return preventReload(this);">Contacto</a>
     <a href="http://localhost:8081/prueba_war/" onclick="return preventReload(this);">volver al inicio</a>
-    <button class="login-btn" onclick="location.href='login/login.jsp';">Iniciar Sesión</button>
+    <button class="login-btn" data-target="http://localhost:8081/prueba_war/login/login.jsp" onclick="preventReloadFromButton(this)">Iniciar Sesión</button>
 
 </nav>
 
@@ -35,6 +35,22 @@
             return false; // Evita la navegación
         }
         return true; // Permite la navegación
+    }
+</script>
+<script>
+    function preventReloadFromButton(button) {
+        // Obtén el pathname del destino del botón
+        const targetPath = new URL(button.getAttribute('data-target')).pathname;
+        const currentPath = window.location.pathname;
+
+        // Verifica si el destino es la página actual
+        if (targetPath === currentPath) {
+            console.log("Ya estás en esta página.");
+            return false; // Evita la acción
+        }
+        // Redirige a la URL del botón
+        window.location.href = button.getAttribute('data-target');
+        return true;
     }
 </script>
 
