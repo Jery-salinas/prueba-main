@@ -15,7 +15,7 @@
         <input type="text" placeholder="Buscar productos..." />
         <button class="search-btn">Buscar</button>
     </div>
-    <button class="back-btn" data-target="http://localhost:8081/prueba_war/" onclick="preventReloadFromButton(this);;">Volver al inicio</button>
+    <button class="back-btn" data-target="http://localhost:8081/prueba_war/" onclick="preventReloadFromButton(this);">Volver al inicio</button>
 </header>
 <!-- Navegación con las opciones de Productos, Galería, Clases, Contacto e Iniciar sesión -->
 <nav>
