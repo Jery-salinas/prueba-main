@@ -23,7 +23,7 @@
     <a href="Servicios/jsp_servicios.jsp">Servicios</a>
     <a href="galeria/galeria.jsp">Galería</a>
     <a href="clases/jsp_clases.jsp">Clases</a>
-    <a href="#contacto">Contacto</a>
+    <a href="jsp_contato/contacto.jsp">Contacto</a>
     <button class="login-btn" onclick="location.href='login/login.jsp';">Iniciar Sesión</button>
 </nav>
 
