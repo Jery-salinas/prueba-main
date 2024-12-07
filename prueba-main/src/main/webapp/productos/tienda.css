@@ -3,7 +3,7 @@ body {
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f6a8a8;
+    background-color: #ffffff;
     color: #333;
 }
 
@@ -12,9 +12,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #e9a6a6;
+    background-color: #ffcccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 .search-bar {
     display: flex;
@@ -112,7 +113,7 @@ header {
 }
 
 .product-area h2 {
-    color: #e78c8c;
+    color: #ffffff;
     margin-bottom: 20px;
     font-family: 'Playfair Display', serif;
 }

@@ -67,7 +67,7 @@ main {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 15px;
-    background-color: #25D366;
+    background-color: #fa5656;
     color: #fff;
     font-weight: bold;
     border: none;
@@ -77,7 +77,7 @@ main {
 }
 
 .contact-btn:hover {
-    background-color: #128C7E;
+    background-color: #f6a8a8;
 }
 
 /* Botón fijo de contacto en el pie de página */
@@ -86,14 +86,14 @@ footer {
     position: fixed;
     bottom: 0;
     padding: 10px;
-    background-color: #25D366;
+    background-color: #fa5656;
     text-align: center;
 }
 
 .whatsapp-btn {
     padding: 12px 20px;
     font-size: 1rem;
-    background-color: #25D366;
+    background-color: #fa5656;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -102,6 +102,6 @@ footer {
 }
 
 .whatsapp-btn:hover {
-    background-color: #128C7E;
+    background-color: #f6a8a8;
 }
 
